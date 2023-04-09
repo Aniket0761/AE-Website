@@ -1,0 +1,271 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: #5C636E;
+    color: #F7F7F7;
+}
+
+hr{
+    margin: auto;
+    border-style: dotted none none;
+    border-color: white;
+    border-width: 15px;
+    width: 15%;
+    color: white;
+    border-spacing: 15px;
+}
+
+/*************************** Navigation Bar ***************************/
+.navbar{
+    padding: 0.5% 5% ;
+    height: 60px;
+}
+
+#navigation-bar{
+    background-color: #393E46;
+    color: #fff;
+}
+
+#navigation-bar a{
+    color: #F7F7F7;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+}
+
+.nav-item{
+    margin: 0px 20px;
+    font-size: 1.2rem;
+}
+
+/******************************** Carousel ****************************/
+#carousel{
+    text-align: center;
+    justify-content: center;
+    color: #FFF;
+    position: relative;
+    width: 100%;
+    /* height: 80%; */
+    display: inline-block;
+    /* margin: 0px 0px 100px 0px; */
+}
+
+.carousel-inner{
+    /* padding: 5%; */
+    width: 100%;
+    display: inline-block;
+    height: calc(100% - 60px);
+
+    /* position: relative; */
+}
+
+#carousel img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/***************************Quotation 1*****************************/
+#quotation1{
+    /* background-color: #F7F7F7; */
+    color: #393E46;
+    margin: 2% 5%;
+    justify-content: center;
+}
+
+/* #quotation1 hr{
+    margin: auto;
+    border-style: dotted none none;
+    border-color: white;
+    border-width: 15px;
+    width: 15%;
+    color: white;
+    border-spacing: 15px;
+} */
+
+.quotation{
+    margin: 2% 0%;
+}
+
+.quotation-text{
+    text-align: center;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/*************************Display Items****************************/
+#products{
+    margin: 2% 5%;
+}
+
+#products .container {
+    overflow: hidden;
+    display: flex;
+    height: 500px;
+    width: 100%;
+    border-width: 0px;
+    /* width: 1500px; */
+    margin: 0px auto;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #products .container div {
+    height: 400px;
+    min-width: 300px;
+    margin-left: 5%;
+  }
+  
+  .pink {
+    background-color: #00000000;
+    border-width: 0px;
+  }
+
+  #products .btn-text{
+    font-size: 1.5rem;
+  }
+
+.add-animation{
+    animation: slide 30s linear infinite;
+}
+
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+      left: 100%;
+    }
+    100% {
+      transform: translate3d(-1500px, 0, 0);
+      left: -100
+    }
+  }
+
+#products img{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+
+/****************************slider****************************/
+#slideEffect{
+    margin: 2% 5%;
+}
+
+#slideEffect .container-fluid {
+
+    width: 700px;
+	height: 700px;
+	position: relative;
+	margin: auto;
+
+  }
+
+#slideEffect .image {
+    height: 100%;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+  }
+
+.after {
+    background-image: url("before1.jpeg");
+    width: 50%;
+	z-index: 2;
+
+}
+.before {
+    background-image: url('after1.jpeg');
+    width: 100%;
+	z-index: 1;
+    /* width: 50%; */
+}
+
+
+.slider {
+    left: 0;
+    padding: 0px;
+    width: 100%;
+	height: 100%;
+	outline: none;
+	background-color: transparent;
+	position: absolute;
+	margin: 0px 0px;
+	z-index: 3;
+	cursor: pointer;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	transition: 0.25s all ease-in-out;
+	-moz-transition: 0.25s all ease-in-out;
+	-webkit-transition: 0.25s all ease-in-out;
+	z-index: 4;
+}
+
+.slider::-moz-range-thumb {
+	width: 6px;
+	height: 600px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+	width: 6px;
+	height: 700px;
+	background-color: white;
+	cursor: pointer;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.slider-button {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	-moz-broder-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color: white;
+	position: absolute;
+	top: calc(50% - 18px);
+	left: calc(50% - 18px);
+	cursor: pointer;
+	z-index: 3;
+}
+
+.slider-button:before {
+	color: #555;
+	position: absolute;
+	top: 3px;
+	left: 0px;
+	content: "\279C";
+    transform: rotate(-180deg);
+}
+
+.slider-button:after {
+	color: #555;
+	position: absolute;
+	top: 3px;
+	right: 0px;
+	content: "\279C";
+}
+
+@media screen and (max-width: 767px){
+    #slideEffect .container-fluid {
+        width: 400px;
+        height: 400px;
+      }
+    .slider::-webkit-slider-thumb {
+        height: 400px;
+    }
+}

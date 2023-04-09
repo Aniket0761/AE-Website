@@ -1,0 +1,119 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AE LED Mirror</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+    <section id="navigation-bar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">AE LED MIRROR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+                    <div class="d-flex">
+                        <button class="btn btn-outline-success">CONTACT US</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section> 
+    
+    <section id="carousel">
+        <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://iso.500px.com/wp-content/uploads/2015/03/business_cover.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://edit.co.uk/uploads/2016/12/Image-1-Alternatives-to-stock-photography-Thinkstock.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://st.depositphotos.com/1085342/2104/i/450/depositphotos_21043079-stock-photo-cool-five-years-old-boy.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <section id="quotation1">
+        <hr>
+        <div class="quotation">
+            <h2 class="quotation-text">Quotation line 1 Quotation line 1 Quotation line 1 Quotation line 1 Quotation line 1</h2>
+        </div>
+        <hr>
+    </section>
+    
+    <section id="products">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12 my-auto">
+                <div class="quotation">
+                    <h2 class="quotation-text" style="line-height:1.5">OUR PRODUCT LINES</h2>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <div class="container">
+                    <div class="card pink add-animation">
+                        <img src="https://st.depositphotos.com/1085342/2104/i/450/depositphotos_21043079-stock-photo-cool-five-years-old-boy.jpg" alt="" class="rounded">
+                        <button type="button" class="btn btn-dark my-auto btn-lg btn-text">Click Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <hr>
+
+    <section id="slideEffect">
+        <div class="container-fluid">
+            <img alt="" class="image before">
+            <img alt="" class="image after">
+
+            <!-- <img alt="" class="img background-img img-fluid">
+            <img alt="" class="img foreground-img img-fluid"> -->
+            <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
+	        <div class="slider-button"></div>
+
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+<footer>
+    <div style="height:500px;"></div>
+</footer>
+</html>
