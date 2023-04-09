@@ -21,9 +21,12 @@ hr{
 /*************************** Navigation Bar ***************************/
 .navbar{
     padding: 0.5% 5% ;
-    height: 60px;
+    height: 4rem;
 }
 
+#navbarToggler{
+    z-index: 10;
+}
 #navigation-bar{
     background-color: #393E46;
     color: #fff;
